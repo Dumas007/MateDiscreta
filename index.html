@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Principal</title>
+    <style>
+        /* Tipografía e importación de fuente */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .menu {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 300px;
+            animation: slideIn 0.5s ease-in-out;
+        }
+
+        .menu h1 {
+            margin-bottom: 30px;
+            font-size: 28px;
+            color: #333;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .menu button {
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+
+        .menu button:hover {
+            background-color: #0056b3;
+            transform: translateY(-5px);
+        }
+
+        /* Efecto de entrada */
+        @keyframes slideIn {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h1>Menú Principal</h1>
+        <button onclick="location.href='matriz.html'">Matriz</button>
+        <button onclick="location.href='arbol.html'">Árbol</button>
+    </div>
+</body>
+</html>
